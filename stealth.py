@@ -13,6 +13,11 @@ import requests
 # This tool also takes care of other logging files like /var/log/utmp & /var/log/btmp
 # It also leaves no trace in the bash history and takes care the $HISTFILE/$HISTFILESIZE ect.
 
+if sys.version_info < (3, 3):
+    sys.stderr.write(
+        "Sorry, advanced Stealth is not compatible with Python {}.{}, "
+        "Python 3.3 or newer is required \n".format(*sys.version_info))
+    sys.exit(1)
 
 # ayo puto! awkos is een script kiddy
 apacheClear = "81.208.21.103"
