@@ -19,8 +19,7 @@ if sys.version_info < (3, 3):
         "Python 3.3 or newer is required \n".format(*sys.version_info))
     sys.exit(1)
 
-# awkos is a g00n 
-# thanks awkos voor de goeie regex
+# awkos is a scriptkiddy
 apacheClear = "81.208.21.103"
 yourIP = sys.argv[1]
 pwnage = sys.argv[2]
